@@ -3,10 +3,19 @@
 
 
   <head>
-        <title>SOLACE DIVINE</title>
+        <title>TANYA DALAL</title>
         <title>portfolio</title>
+        <style>A{text-decoration: none;}</style>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="main.css">
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
+       <meta content="width=device-width, initial-scale=1" name="viewport" />
         <style>A{text-decoration: none;}</style>
 
   </head>
@@ -16,13 +25,15 @@
         <div class="sidebar">
             
             <div>About me</div>
-            <div>Testimonials</div>
-            <div>My services</div>
+            <div><a href="education.html">Education</a></div>
+            <div><a href="tech.html">Tech Stack</a></div>
             <div>Experience</div>
             <div>Contact Me</div>
-            <div class="theme" onclick="switchTheme();">
-                Change theme
-            </div>
+            
+            <label class="switch-toggle">
+                <input type="checkbox" class="checkbox" onclick="switchTheme();"/>
+                <span class="switch-btn"></span>
+            </label>
 
         </div>
 
@@ -31,26 +42,190 @@
             <div class="page">
 
                 <div class="hamburger"onclick='toggle();'></div>
-                <div class="content"></div>
+                <div class="content">
+                    <div class="square">
+                       <div class="para">THE ODESSEY OF A WEB DESIGNER</div>
+                        <div class="para2">Tanya Dalal</div>
+                    </div>
+                    <div class="square2"><div class="text"></div></div>
+                </div>
 
+            </div>
+
+            <div class="page">
+
+                <div class="hamburger"onclick='toggle();'></div>
+                <div class="content">
+                    <div class="aboutme">
+                        <div class="aboutmehead">
+                            <div id="lines">Lets Just Call It</div>   
+                            <div id="mypic"> <img src="photos/me.png"  width="120" height="120" ></div>
+                            <div id="lines"> " My Epilogue " </div>
+                        </div>
+                        <div class="aboutmebody">
+                            Hey I'm Tanya. People call me TAN-TAN. I'm a web designer, graphic designer, illustrator, programmer,writer, bibliophile, ambivert, nerdy and so on .... (rumors says this list is still continuing). "Dreamer" that's the word that describes me the best. I believe in patience , hard work and miracles. 
+                            My skills and interest in HTML, CSS , JavaScript and JqQuery completes me as a frontend developer.<br> <br>You will always find me in a cottage academia, most motivated and esthusiastic one filling the neutrals with the tech aesthetics. Do check out some of my TECHSTHETIC work! Also connect with me on linkedin!
+                            <div id="aboutline">- Jack Of All Trades</div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
             <div class="page space">
 
                 <div class="hamburger"onclick='toggle();'></div>
                 <div class="content">
-                    <img src="logos.png" class="pic"> 
-                    <img src="logos.png" class="pic"> 
-                    <img src="logos.png" class="pic">  
+                    <div id="education">
+                        <div class="card1">
+
+                            <div class="codetext1">class schooling <br>
+                                {<br>
+                                    void display()<br>
+                                    {<br>
+                                        String name = TANYA DALAL;<br>
+                                        int year = 2019;<br>
+                                        System.out.println("TAP <br>
+                                         THE BAR TO KNOW MORE");<br>
+                                    }<br>
+                                }
+                            
+                            
+                            </div>
+                        
+                        </div>
+
+                        <div class="animated_card1"onclick="expandcard(this)">
+                        
+                             <div class="inner_text">St. Teresa's Academy</div>
+                             <div class="inner_text1">(ISC)<br>TIMELINE<br>2017 : <br>secured 86.5% in class 10th || 98% in computer science
+                               <br>2019 : <br> secured 87.5% in class 12th ||  87% in computer science
+                            </div>
+                        </div>
+                        <div class="card2">
+                            
+                            <div class="codetext2">class graduation <br>
+                                {<br>
+                                    void display()<br>
+                                    {<br>
+                                        String name = TANYA DALAL;<br>
+                                        int year = 2022;<br>
+                                        System.out.println("TAP <br>
+                                         THE BAR TO KNOW MORE");<br>
+                                    }<br>
+                                }
+                            
+                            
+                            </div>
+                            
+
+                        </div>
+                        <div class="animated_card2"onclick="expandcard2(this)">
+                            <div class="inner_text">Banasthali Vidyapeeth</div> 
+
+                            <div class="inner_text2"><br>Bachelor of computer applications<br>(BCA)<br>9.13 CGPA Till 4th semester <br>  1st semester : 9.0 CGPA <br> 2nd semester : 9.32 CGPA 
+                                <br> 3rd semester : 9.07 CGPA <br> 4th semester : 9.11 CGPA
+                             </div>
+                        
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
+
+            <div class="page">
+
+                <div class="hamburger"onclick='toggle();'></div>
+                <div class="content">
+                    <p>Tech Stack</p>
+                    <div class="tech">
+                        <div class="techbox">
+                            <div class="tooltip bs-tooltip-top" role="tooltip">
+                                <div class="arrow"></div>
+                                <div class="tooltip-inner">
+                                  
+                                </div>
+                              </div>
+                           <div class="icons"> <img src="photos/web-maintenance.png"  width="40" height="40" ></div>
+                            <div class="techbox1">
+                                <div id="largetext"><a href="http://ude.my/UC-cb165c83-9109-46ee-bc94-bd401efb9c21 "  data-toggle="tooltip" title="Intermediate">| HTML | CSS | BOOTSTRAP | </a></div>
+                                
+                            </div>
+                        </div>
+          
+
+                        <div class="techbox">
+                            <div class="icons"> <img src="photos/javascript.png"  width="40" height="50" ></div>
+                           
+                            <div class="techbox1">
+                              <div><a href="http://ude.my/UC-2f749725-fc7e-4458-a175-1f0e978261ce" data-toggle="tooltip" title="Intermediate">  JAVASCRIPT </a></div>
+                            </div>
+                        </div>
+
+
+                        <div class="techbox">
+                            <div class="icons"> <img src="photos/jquery-sketch-symbol.png"  width="40" height="40" ></div>
+                           
+                            <div class="techbox1">
+                                <div ><a href="http://ude.my/UC-2f749725-fc7e-4458-a175-1f0e978261ce" data-toggle="tooltip" title="Intermediate">  JQUERY </a></div>
+                            </div>
+                        </div>
+
+
+                        <div class="techbox">
+                            <div class="icons"> <img src="photos/java.png"  width="40" height="40" ></div>
+                           
+                            <div class="techbox1">
+                                JAVA
+                            </div>
+                        </div>
+
+
+                        <div class="techbox">
+                            <div class="icons"> <img src="photos/c-.png"  width="40" height="40" ></div>
+                           
+                            <div class="techbox1">
+                                C / C++
+                            </div>
+                        </div>
+
+                        
+                        <div class="techbox">
+                            <div class="icons"> <img src="photos/vb.png"  width="40" height="40" ></div>
+                            <div class="techbox1">
+                                VB.NET
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+                </div>
+
+            </div>
+
+
+            <div class="page">
+
+                <div class="hamburger"onclick='toggle();'></div>
+                <div class="content">
+
+
+
+                </div>
+
+            </div>
+
+
+
 
         </div>
         
 
 
         <script src="main.js"></script> 
+        <script src="main2.js"></script>
 
   </body>
  
